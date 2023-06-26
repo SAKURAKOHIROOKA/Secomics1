@@ -6,5 +6,5 @@ class User < ApplicationRecord
          
   attachment :profile_image
   
-  has_many :comics, dependen: :destroy
+  has_many :comics, dependent: :destroy
 end
