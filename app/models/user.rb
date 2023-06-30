@@ -8,4 +8,7 @@ class User < ApplicationRecord
   
   has_many :comics, dependent: :destroy
   has_many :post_comments, dependent: :destroy
+  
+  validates :name, presence: true,length: {minimum: 2, maximum: 20 }, uniqueness: true
+  validates :introduction, length: {maximum: 50 }
 end
