@@ -2,14 +2,14 @@ class UsersController < ApplicationController
   
   def index
     @user = current_user
-    @users = User.all
+    @users = User.page(params[:page]).reverse_order
     @comic = Comic.new
   end
 
   def show
     @user = User.find(params[:id])
     
-    @comics = @user.comics.all
+    @comics = @user.comics.page(params[:page]).reverse_order
   end
 
   def edit

@@ -1,0 +1,27 @@
+<div class='col-md-3'>
+        <h2>User info</h2>
+        <table class='table'>
+          <tr>
+            <%= attachment_image_tag user, :profile_image, size: "100x100", fallback: "default-image.jpg" %>
+          </tr>
+          <tr>
+            <th>name</th>
+            <th><%= user.name %></th>
+          </tr>
+          <tr>
+            <th>introduction</th>
+            <th><%= user.introduction %></th>
+          </tr>
+        </table>　 
+        <div class='row'>
+          <%= link_to edit_user_path(user.id), class: "btn btn-outline-dark btn-block"  do %>
+            <i class="fas fa-user-cog"></i>
+            <% end %>
+        </div>
+        
+        <h2 class="mt-5 mx-5">新規投稿は<br>
+                         こちらから</h2>
+          <div class="form-group-new">
+            <%= link_to '新規投稿', new_comic_path, class: "btn btn-warning" %>
+          </div>
+      </div>

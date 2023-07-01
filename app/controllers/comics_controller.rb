@@ -3,7 +3,7 @@ class ComicsController < ApplicationController
   def index
     @user = current_user
     
-    @comics = Comic.all
+    @comics = Comic.page(params[:page]).reverse_order
   end
 
   def show
@@ -11,6 +11,9 @@ class ComicsController < ApplicationController
     
     @comic = Comic.find(params[:id])
     @comic_user = @comic.user
+    
+    @post_comment = PostComment.new
+    
   end
 
   def new

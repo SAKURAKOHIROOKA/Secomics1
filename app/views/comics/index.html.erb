@@ -3,7 +3,7 @@
   <div class='container px-5 px-sm-0'>
     <div class='row'>
       <%= render 'sidebar/userinfo', user: @user %>
-      <div class='col-md-8 offset-md-1'>
+      <div class='right col-md-8 offset-md-1'>
         <h2>Comics</h2>
         <table class='table table-hover table-inverse'>
           <thead>
@@ -29,6 +29,10 @@
           </thead>
           <tbody></tbody>
         </table>
+        
+        <div class="paginate">
+       　　 <%= paginate @comics %>
+        </div>
       </div>
     </div>
   </div>

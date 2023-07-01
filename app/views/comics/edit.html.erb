@@ -14,24 +14,25 @@
         
         <%= form_with model: @comic, local: true do |f|  %>
           <div class="form-group">
-          <label for="comic_title">タイトル</label>
-          <%= f.text_field :title, id: "comic_title" %>
+          　　<label for="comic_title">タイトル</label>
+          　　　<%= f.text_field :title, id: "comic_title" %>
           </div>
           <div class="form-group">
-          <labrl for="story">Oあらすじ・キーワード</labrl>
-          <%= f.text_area :story, id: "story" %>
+          　　<labrl for="story">Oあらすじ・キーワード</labrl>
+          　　<%= f.text_area :story, id: "story" %>
           </div>
           <div class="form-group">
-            <label for="review">レビュー</label>
-            <%= f.text_area :review, id: "review" %>
+          　　<label for="review">レビュー</label>
+            　<%= f.text_area :review, id: "review" %>
           </div>
           <div class="form-group">
-          <%= f.submit "編集", class: "btn btn-success" %>
+          　　<%= f.submit "編集", class: "btn btn-success" %>
           </div>
+          
           <%= link_to 'Show', comic_path(@comic.id) %>
           <string>|</string>
           <%= link_to 'Back', comics_path %>
-        <% end %>
+        　　　　<% end %>
       </div>
     </div>
   </div>

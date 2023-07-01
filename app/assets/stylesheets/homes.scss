@@ -1,0 +1,50 @@
+// Place all the styles related to the homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.top{
+  font-family: 'Yusei Magic';
+  font-size: 110px;
+  margin-top: 170px;
+  
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash{
+  0%, 35%, 65%, 100%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+    color: #FFD700;
+  }
+  49%{
+    opacity: 1;
+    color: #00BFFF;
+  }
+  83%{
+    opacity: 1;
+    color: #ff1493;
+  }
+}
+
+.top2{
+  font-family: 'Yusei Magic';
+  font-size: 30px;
+  text-align: center;
+}
+
+.top-btn{
+  margin-top: 50px;
+}
+
+.about{
+  text-align: center;
+  margin-top: 80px;
+  font-size: 80px;
+}
+
+.onepiece{
+  margin-top: 80px;
+  text-align: center;
+}
+

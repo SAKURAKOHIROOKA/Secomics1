@@ -16,3 +16,80 @@
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body{
+  background-image: image-url('comic493.png');
+  background-size: cover;
+}
+
+h1{
+  font-family: 'Yusei Magic';
+}
+
+h2{
+  font-family: 'Yusei Magic';
+}
+
+th{
+  font-family: 'Yusei Magic';
+}
+
+td{
+  font-family: 'Yusei Magic';
+}
+
+// UserInfoページ
+
+.btn-warnig{
+  text-align: center;
+  font-family: 'Yusei Magic';
+}
+
+.form-group-new{
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Yusei Magic';
+}
+
+//新規投稿ページ
+
+label{
+  font-family: 'Yusei Magic';
+}
+
+.btn-success{
+  font-family: 'Yusei Magic';
+}
+
+.new{
+  margin-top: 80px;
+}
+
+// 編集ページ
+
+.edit{
+  margin-top: 80px;
+}
+
+.btn-secondary{
+  font-family: 'Yusei Magic';
+}
+
+// comment
+.comment{
+  margin-top: 30px;
+}
+
+// Comic一覧ページ
+.right{
+  position: relative;
+}
+
+.paginate{
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
